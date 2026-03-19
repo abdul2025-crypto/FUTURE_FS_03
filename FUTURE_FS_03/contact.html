@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Tutor | BC IT Peer Tutors</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header class="header">
+<div class="logo">
+<h1>BC IT Peer Tutors</h1>
+<p>Belgium Campus iTversity</p>
+</div>
+
+<nav class="nav">
+<a href="index.html">Home</a>
+<a href="subjects.html">IT Subjects</a>
+<a href="about.html">About</a>
+<a href="contact.html">Book Tutor</a>
+</nav>
+</header>
+
+<section style="text-align:center; padding:30px 20px;">
+<h2>Book a Tutoring Session</h2>
+<p style="max-width:600px; margin:auto; color:#64748b;">
+Fill in your details and get matched with a tutor who can help you master your subject quickly and effectively.
+</p>
+</section>
+
+<section class="booking-section">
+
+<form id="tutorForm">
+  <input type="text" placeholder="👤 Student Name" required>
+  <input type="email" placeholder="📧 Student Email" required>
+  <select required>
+    <option value="">📘 Select Subject</option>
+    <option>Programming & Development</option>
+    <option>Databases</option>
+    <option>Software Engineering</option>
+    <option>IT Fundamentals</option>
+    <option>Business & Management</option>
+  </select>
+  <input type="date" required>
+  <input type="time" required>
+  <textarea placeholder="✍️ Describe what you need help with"></textarea>
+  <button type="submit">Request Tutor</button>
+  <p id="message"></p>
+</form>
+
+<div class="info-box">
+  <h3>Why Book a Tutor?</h3>
+  <p>Get personalized help from top students who understand your coursework. Our sessions are focused, practical, and designed to help you improve quickly.</p>
+  <p>Whether you're preparing for exams or struggling with assignments, we make learning simple and effective.</p>
+</div>
+
+</section>
+
+<section class="hero">
+<h2>Start Improving Today 🚀</h2>
+<p>Your success in IT starts with the right support.</p>
+<a href="subjects.html"><button>Explore Subjects</button></a>
+</section>
+
+<footer style="text-align:center; padding:20px; background:#020617; color:#64748b;">
+<p>Peer Tutoring Service | Belgium Campus iTversity</p>
+</footer>
+
+<script>
+const form = document.getElementById("tutorForm");
+
+if(form){
+  form.addEventListener("submit", function(e){
+    e.preventDefault();
+    const message = document.getElementById("message");
+    message.innerHTML = "✅ Request sent successfully! A tutor will contact you soon.";
+    message.style.color = "#22c55e";
+    form.reset();
+  });
+}
+</script>
+
+</body>
+</html>
