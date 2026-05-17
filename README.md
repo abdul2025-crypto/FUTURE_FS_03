@@ -47,6 +47,4 @@ FUTURE_FS_03/
 - The booking form shows a success message on submit but does **not** send data to a server yet. Connecting a backend or email service would be a natural next step for production use.
 - An internet connection is needed on first load for the tsParticles CDN script.
 
-## License
 
-Academic / project use — Belgium Campus iTversity.
