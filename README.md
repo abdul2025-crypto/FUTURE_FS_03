@@ -19,7 +19,6 @@ A student-led peer tutoring website for IT students at **Belgium Campus iTversit
 | Scripting  | Vanilla JavaScript                  |
 | Animation  | [tsParticles](https://particles.js.org/) (CDN) |
 
-No build step or backend is required — this is a static front-end project.
 
 ## Project Structure
 
@@ -33,20 +32,6 @@ FUTURE_FS_03/
 └── script.js       # Typing effect, particles, form & subject helpers
 ```
 
-## Getting Started
-
-1. Clone or download this repository.
-2. Open the `FUTURE_FS_03` folder.
-3. Open `index.html` in a modern web browser (Chrome, Firefox, Edge, or Safari).
-
-Alternatively, serve the folder with a local static server for a closer-to-production experience:
-
-```bash
-# Example with Python (from inside FUTURE_FS_03/)
-python -m http.server 8000
-```
-
-Then visit `http://localhost:8000` in your browser.
 
 ## Pages
 
